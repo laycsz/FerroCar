@@ -1,0 +1,53 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  background: #0B0524;
+  color: white;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+
+/* link que foi visitado */
+a:visited {
+  color: white;
+}
+
+/* mouse over */
+a:hover {
+  color: #826099;
+}
+
+/* link selecionado */
+a:active {
+  color: #1C052B;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1C052B;
+}
+
+header h1, header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #826099;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px); /* Ajuste para considerar a altura do header */
+  padding: 20px;
+}

@@ -13,8 +13,8 @@ session_start();
   <title>Ferrocar</title>
   <link rel="icon" href="../assets/images/icon/parking (1).png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="<?php BASEURL ?>/assets/css/style.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="<?php BASEURL ?>/assets/css/style_button.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php BASEURL ?>/assets/css/navbar.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="<?php BASEURL ?>/assets/css/global.css" media="screen" />
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">

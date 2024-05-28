@@ -50,102 +50,61 @@ $sql = "SELECT * FROM clientes ORDER BY nome DESC";
   }
 
     }
-      // 
         
 
 
   ?>
-  <div class="login-box">
-    <h2 class="h2-clie-register">Cadastrar Clientes</h2>
-    <form method="POST" action="../clientes/register.php ">
-      <input type="hidden" name="acao" value="cadastrar">
-      <div class="user-box">
-        <input type="text" name="nome">
-        <label class="label-regis-clie">Nome do cliente:</label>
-      </div>
-      <div class="user-box">
-        <input type="text" name="cpf" id="cpf" autocomplete="off" maxlength="14" onkeyup="mascara_cpf()">
-        <label class="label-regis-clie">Cpf do Cliente:</label>
-      </div>
-      <div class="user-box">
-        <input type="email" name="email">
-        <label class="label-regis-clie">Email do Cliente:</label>
-      </div>
-      <div class="user-box">
-        <input type="text" name="telefone" id="telefone" maxlength="15">
-        <label class="label-regis-clie">telefone do Cliente:</label>
-      </div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Cliente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/registerclient.css">
+</head>
+<body>
 
-      <label class="label-regis-clie">Hora Entrada: </label>
-      <input type="time" name="entrada" id="entrada" value="<?php $hora = date('H:i:s');
-
-                                                            echo $hora; ?>">
-
-
-      <label class="label-regis-clie">Saida: </label>
-
-      <input type="time" name="saida" id="saida" value="<?php $hora = date('H:i:s');
-                                                        echo $hora; ?>">
-
-
-
-
-
-      <script>
+    <main>
+        <div class="container">
+            <div class="login-box">
+                <h2>Cadastrar Clientes</h2>
+                <form  method="post" action="../clientes/register.php" onsubmit="return validarCpf()">
+                    <div class="user-box">
+                        <label for="nome">Nome do cliente:</label>
+                        <input type="text" id="nome" name="nome"   required>
+                    </div>
+                    <div class="user-box">
+                        <label for="cpf">Cpf do Cliente:</label>
+                        <input type="text" id="cpf" name="cpf"  maxlength="14" onkeyup="mascara_cpf()">
+                    </div>
+                    <div class="user-box">
+                        <label for="email">Email do Cliente:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="user-box">
+                        <label for="telefone">Telefone do Cliente:</label>
+                        <input type="text" id="telefone" name="telefone" required>
+                    </div>
+                    <div class="user-box">
+                        <label for="entrada" class="label-entrada-clie">Hora Entrada:</label>
+                        <input class="horarioentrada" type="time" id="entrada" name="entrada" required>
+                    </div>
+                    <div class="user-box">
+                        <label for="saida" class="label-saida-clie">Saída Prevista:</label>
+                        <input class="horariosaida" type="time" id="saida" name="saida" required>
+                    </div>
+                    <button class="btn" type="submit" value="cadastrar">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+   
+</body>
+</html>
+<script>
         $("#telefone").mask("(99) 99999-9999")
       </script>
 
-
-
-      <a href="#">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <input class="botao" type="submit" value="cadastrar" onclick="validarCpf()">
-      </a>
-      <br>
-      <br>
-
-
-      </a>
-    </form>
-  </div>
-
-
-
-</body>
-
-</html>
-
-<style>
-  .msg-err{
-      height: 30px;
-      align-items: center;
-      font-weight: 600;
-      border-radius:8px;
-      margin: auto;
-      color: red;
-      text-align: center;
-  width: 420px;
-  margin: 10px auto;
-  padding: 10px;
-  background-color: rgba(250, 128, 114, .3);
-  border-radius: 1px solid rgb(165, 42, 42);
-
-}
-   .msg-sucess{
-    text-align: center;
-    color: whitesmoke;
-  width: 420px;
-  margin: 10px auto;
-  background-color: rgba(50, 205, 50, .3);
-  border-radius: 1px solid rgb(34, 139, 34);
-}
-</style>
-
-
-
-</body>
-
-</html>
+  
