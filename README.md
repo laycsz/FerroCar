@@ -27,6 +27,8 @@ O projeto "Ferrocar" é um sistema de gestão de estacionamento desenvolvido par
 ```bash
 git clone https://github.com/laycsz/FerroCar.git
 cd FerroCar
+```
+## Banco de dados
 
 
 
