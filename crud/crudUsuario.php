@@ -29,7 +29,7 @@
                  $res = $cmd-> fetchAll(PDO::FETCH_ASSOC);
                  return $res;
             }
-            public function cadastrarusuariologin($nome, $cpf, $email, $senha, $acesso,)
+            public function cadastrarusuariologin($nome, $cpf, $email, $senha)
             {
                 //antes de cadastrar verificar se ja tem o cpf cadastrado
                     $cmd = $this->pdo->prepare("SELECT cpf from usuariologin WHERE cpf=:c");
@@ -41,13 +41,13 @@
 
                     }else
                     {
-                        $cmd = $this->pdo->prepare("INSERT INTO usuariologin(nome, cpf, email,senha, acesso) VALUES (:n, :c, :e,:s, :ac)");
+                        $cmd = $this->pdo->prepare("INSERT INTO usuariologin(nome, cpf, email,senha) VALUES (:n, :c, :e,:s)");
                         $cmd->bindValue(":n", $nome);
                      
                         $cmd->bindValue(":c", $cpf);
                         $cmd->bindValue(":e", $email);
                         $cmd->bindValue(":s", $senha);
-                        $cmd->bindValue(":ac", $acesso);
+                     
       
                         
                       

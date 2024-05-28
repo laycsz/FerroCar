@@ -54,10 +54,7 @@ if (isset($_GET['id'])) {
                     <input type="text" name="usua_emailUpdate" value="<?php if (isset($infosUpdate['email'])) {
                                                                             echo $infosUpdate['email'];
                                                                         } ?>">
-                    <label for="">Acesso</label>
-                    <input type="text" name="usua_acessoUpdate" value="<?php if (isset($infosUpdate['acesso'])) {
-                                                                            echo $infosUpdate['acesso'];
-                                                                        } ?>">
+                   
                     <br><br>
                     <input type="submit">
                     <input type="reset">

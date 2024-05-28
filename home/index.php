@@ -22,15 +22,11 @@ include '../inc/header.php';
 
   <div class="text-center">
     <div>
-
-
       <div>
         <div editable="rich">
           <p class="lead user-select-none">
           <div class="lead user-select-none">
-
-
-            </p>
+          </p>
 
           </div>
 
@@ -43,11 +39,11 @@ include '../inc/header.php';
     <br>
     <br>
     <div class="text-align-center">
-      <h3>Você está logado :)</h3>
+      <h1>Você está logado :)</h1>
 
       <br>
       <a href="../clientes/register.php">
-        <h3>Cadastrar cliente</h3>
+        <h1>Cadastrar cliente</h1>
       </a>
 
     

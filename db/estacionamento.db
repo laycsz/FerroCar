@@ -17,7 +17,6 @@ nome varchar(100),
 cpf varchar(15),
 email varchar(100),
 senha varchar(100),
-acesso varchar(11)
 
 
 
@@ -31,7 +30,7 @@ categoria varchar(14),
 veic_clie_id varchar(100)
 )
 
-)
+
 create table movimento(
     id serial primary key,
     placas varchar(8),

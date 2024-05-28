@@ -19,7 +19,7 @@ class Usuario
     {
         global $pdo;
         //verificar se o email e senha estao cadastrado, se sim
-        $sql = $pdo->prepare("SELECT * FROM usuariologin WHERE email = :e AND senha = :s AND acesso = 'Admin'");
+        $sql = $pdo->prepare("SELECT * FROM usuariologin WHERE email = :e AND senha = :s");
         $sql->bindValue(":e", $email);
         $sql->bindValue(":s", $senha);
         $sql->execute();
@@ -28,35 +28,12 @@ class Usuario
             $_SESSION['usuariologin'] = array();
             $dado = $sql->fetchAll(PDO::FETCH_ASSOC);
             session_start();
-            $_SESSION['usuariologin'] = array($dado['acesso'], $dado['nome']);
-            $_SESSION['acesso'] = $dado['acesso'];
+            $_SESSION['usuariologin'] = array($dado['nome']);
             return true; //cadastrado com sucesso
         } else {
             return false; //nao foi possivel logar
         }
     }
 
-    public function logarFuncionarios($email, $senha)
-    {
-        global $pdo;
-        //verificar se o email e senha estao cadastrado, se sim
-        $sql = $pdo->prepare("SELECT * FROM usuariologin
-         WHERE email = :e AND senha = :s AND acesso = 'Funcionario'");
-        $sql->bindValue(":e", $email);
-        $sql->bindValue(":s", $senha);
-        $sql->execute();
-        if ($sql->rowCount() > 0) {
-            //entrar no sistema(sessao)
-            $_SESSION['usuariologin
-            '] = array();
-            $dado = $sql->fetchAll(PDO::FETCH_ASSOC);
-            session_start();
-            $_SESSION['usuariologin
-            '] = array($dado['acesso'], $dado['nome']);
-            $_SESSION['acesso'] = $dado['acesso'];
-            return true; //cadastrado com sucesso
-        } else {
-            return false; //nao foi possivel logar
-        }
-    }
+
 }

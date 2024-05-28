@@ -31,7 +31,7 @@ require_once '../conexao/conexao.php';
                     <th class="th-clie-listar" scope="col">NOME</th>
                     <th class="th-clie-listar" scope="col">CPF</th>
                     <th class="th-clie-listar" scope="col">EMAIL</th>
-                    <th class="th-clie-listar" scope="col">ACESSO</th>
+    
 
                     <th scope="col">EDITAR</th>
                 </thead>
@@ -43,7 +43,7 @@ require_once '../conexao/conexao.php';
 
                     if (!empty($_GET['search'])) {
                         $data = $_GET['search'];
-                        $query_usuarios = "SELECT * FROM usuariologin WHERE nome LIKE '%$data%' or nome LIKE  '%$data%' or acesso LIKE  '%$data%'  ORDER BY id_login DESC ";
+                        $query_usuarios = "SELECT * FROM usuariologin WHERE nome LIKE '%$data%' or nome LIKE  '%$data%'  ORDER BY id_login DESC ";
                     } else {
                         $query_usuarios = "SELECT * FROM usuariologin ORDER BY id_login DESC";
                     }
@@ -61,7 +61,7 @@ require_once '../conexao/conexao.php';
                         echo "<td>  $nome</td>";
                         echo "<td>  $cpf</td>";
                         echo "<td>  $email</td>";
-                        echo "<td>  $acesso</td>";
+            
 
                         echo "<td><a href='../usuarios/editar.php?id= $id_login'><i class='bi bi-pencil'></i></a>";
                         echo "</tr>";

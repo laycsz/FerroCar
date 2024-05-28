@@ -21,12 +21,12 @@ $u = new Usuario;
       <form class="login-form" method="POST" action="index.php">
         <div class="input-group">
           <label class="label">Usuario</label>
-          <input autocomplete="off" name="email" id="senha" class="input" type="email">
+          <input class="input-form" autocomplete="off" name="email" id="senha" class="input" type="email">
           <div></div>
         </div>
-        <div class="input-group">
+        <div class="input-group" >
           <label class="label">Senha</label>
-          <input autocomplete="off" name="senha" id="senha" class="input" type="password">
+          <input class="input-form" autocomplete="off" name="senha" id="senha" class="input" type="password">
           <div></div>
         </div>
         <button class="btn"> Enviar
@@ -49,10 +49,7 @@ $u = new Usuario;
         if ($u->logar($email, $senha)) {
           header("location: home/index.php");
         }
-          elseif($u->logarFuncionarios($email, $senha))
-          {
-                 header("location: home/home.php");
-          }
+        
         } else  {
           
   ?>
@@ -72,37 +69,3 @@ $u = new Usuario;
 </body>
 
 </html>
-
-<style>
-  .input {
-    max-width: 190px;
-    height: 44px;
-    background-color: #35114c;
-    border-radius: .5rem;
-    padding: 0 1rem;
-    border: 2px solid transparent;
-    font-size: 1rem;
-    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
-  }
-
-  .label {
-    display: block;
-    margin-bottom: .3rem;
-    font-size: .9rem;
-    font-weight: bold;
-    color: #b5a2c1;
-    transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
-  }
-
-  .input:hover,
-  .input:focus,
-  .input-group:hover .input {
-    outline: none;
-    border-color: #b5a2c1;
-  }
-
-  .input-group:hover .label,
-  .input:focus {
-    color: #b5a2c1;
-  }
-</style>
