@@ -124,7 +124,7 @@ Edite o arquivo conexao.php com suas credenciais do banco de dados:
 ```bash
 <?php
 try {
-    $conn = new PDO("pgsql:host=localhost;dbname=estacionamento", "postgres", "sua_senha");
+    $conn = new PDO("pgsql:host=localhost;dbname=estacionamento", "postgres", "0511");
     echo "Conexao efetuada";
 } catch(PDOException $e) {
     echo "Erro com banco de dados: " . $e->getMessage();
