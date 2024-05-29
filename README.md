@@ -134,7 +134,7 @@ try {
 ## Execute o Projeto:
 Navegue até o diretório do projeto
 ```bash
-cd "C:\estacionamento"
+cd FerroCar
 ```
 Inicie o servidor PHP:
 ```bash
