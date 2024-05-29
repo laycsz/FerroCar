@@ -88,7 +88,7 @@ CREATE TABLE usuariologin (
     nome VARCHAR(100),
     cpf VARCHAR(15),
     email VARCHAR(100),
-    senha VARCHAR(100),
+    senha VARCHAR(100)
 );
 
 CREATE TABLE veiculos (
