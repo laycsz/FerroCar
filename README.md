@@ -62,7 +62,6 @@ Login e Cadastro
 
 ```bash
 git clone https://github.com/laycsz/FerroCar.git
-cd FerroCar
 ```
 ## Instale as Dependências
 
