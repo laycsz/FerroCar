@@ -50,7 +50,12 @@ Banco de dados
 
 ## Protótipo🖌️
 O protótipo deste projeto foi desenvolvido para fornecer uma visão geral das interfaces e funcionalidades. É importante notar que este protótipo é de baixa fidelidade e foi criado em uma época em que eu ainda não tinha experiência avançada em UX e UI Design. Ele serve como uma base inicial para o desenvolvimento e pode ser aprimorado conforme necessário.
-- <a href="https://www.figma.com/design/2RwIQ9HEOq5DZfwUQXwz4Q/Untitled?node-id=211-2">Figma Desktop</a> 
+- <a href="https://www.figma.com/design/2RwIQ9HEOq5DZfwUQXwz4Q/Untitled?node-id=211-2">Figma Desktop</a>
+## Prints da Tela
+Login e Cadastro
+ <td><img src="https://github.com/laycsz/FerroCar/blob/main/capturasdatela/Captura%20de%20tela%202024-05-28%20215110.png" width="850"></td>
+  <td><img src="https://github.com/laycsz/FerroCar/blob/main/capturasdatela/Captura%20de%20tela%202024-05-28%20215317.png"  width="850"></td>
+
 ## Instalação⚙️
 
 ### Clonar o Repositório
