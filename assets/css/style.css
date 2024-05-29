@@ -668,32 +668,4 @@ select#cars {
  }
 
  /* style relatorio index */
- .table-horario {
-  text-align: center;
-  width: 10px;
-  margin: auto;
-  font-size: 16px;
-
-  font-family: 'Ropa Sans', sans-serif;
-  margin-top: 50px;
-  color: #523b5f;
  
-
-}
-
-.table-horario,
-.th-horario,
-.td-horario {
-  border: 1px solid #E0D9FF;
-}
-
-.table-borderless {
-
-  width: 280px;
-
-  margin: auto;
-}
-td.td-horario{
-background-color: #2e183a;
-
-}

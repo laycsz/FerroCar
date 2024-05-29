@@ -1,0 +1,24 @@
+footer {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: white;
+  width: 100%;
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do footer */
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.back {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #280B39;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}

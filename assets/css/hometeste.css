@@ -1,0 +1,189 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #321843;
+    color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4f1f4f;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-card {
+    background-color: #280B39;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+.stat-number {
+    font-size: 2em;
+    color: #FFFFFF;
+    margin-top: 10px;
+    animation: count 2s forwards;
+}
+
+@keyframes count {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.features,
+.statistics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.feature-block {
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid #4A235A; /* Borda roxa escura */
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    flex: 1 1 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #FFFFFF; /* Texto branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    font-size: 1.2em;
+}
+
+.feature-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+}
+
+.feature-block h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #E0B3FF; /* Título com cor clara */
+}
+
+.feature-block p {
+    font-size: 1em;
+    color: #E0B3FF; /* Texto em cor clara */
+}
+
+
+
+.card {
+    background-color: #2C2C34; /* Fundo cinza escuro */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 200px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    color: #FFFFFF;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #4A235A; /* Fundo roxo escuro ao passar o mouse */
+    color: #FFFFFF; /* Texto branco */
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.card p {
+    font-size: 1em;
+    color: #E0B3FF; /* Texto em tom claro que combine com roxo */
+}
+/* Estilo para a seção de depoimentos */
+.testimonials {
+    padding: 40px 20px;
+    text-align: center;
+   /* Fundo escuro para contraste */
+    color: #E0B3FF; /* Texto em um tom claro que combine com roxo */
+}
+
+.testimonial {
+    background-color: #4A235A; /* Fundo em tom de roxo escuro */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto;
+    display: inline-block;
+    max-width: 300px;
+    color: #FFFFFF; /* Texto branco para contraste */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efeito de transição */
+}
+
+.testimonial:hover {
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+}
+
+.testimonial p {
+    font-style: italic; /* Texto em itálico */
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold; /* Nome do cliente em negrito */
+    color: #E0B3FF; /* Combina com o roxo */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+ 
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .statistics {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+    .hero {
+        text-align: center;
+
+        padding: 40px 0;
+    }

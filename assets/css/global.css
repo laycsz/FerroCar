@@ -7,26 +7,23 @@ body, html {
   background: #0B0524;
   color: white;
 }
-
-a:link {
-  color: rgb(255, 255, 255);
+a{
+  text-decoration: none;
 }
-
-/* link que foi visitado */
-a:visited {
+a:link, a:visited {
+   text-decoration: none;
   color: white;
 }
 
-/* mouse over */
 a:hover {
+  text-decoration: none;
   color: #826099;
 }
 
-/* link selecionado */
 a:active {
+  text-decoration: none;
   color: #1C052B;
 }
-
 
 header {
   display: flex;
@@ -35,7 +32,7 @@ header {
   background-color: #1C052B;
 }
 
-header h1, header nav a {
+header .logo, header nav a {
   color: white;
   text-decoration: none;
 }
@@ -48,6 +45,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 60px); /* Ajuste para considerar a altura do header */
+  min-height: calc(100vh - 60px);
   padding: 20px;
 }

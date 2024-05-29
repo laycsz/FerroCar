@@ -47,7 +47,7 @@ $u = new Usuario;
       if ($u->msgErro == "") {
 
         if ($u->logar($email, $senha)) {
-          header("location: home/index.php");
+          header("location: home/hometeste.php");
         }
         
         } else  {
