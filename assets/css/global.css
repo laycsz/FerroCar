@@ -1,10 +1,12 @@
 /* Global Styles */
 body, html {
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Quicksand', sans-serif;
-  background: #0B0524;
+
+  background: linear-gradient(45deg, #16171a, #292e35);
   color: white;
 }
 a{
@@ -24,14 +26,13 @@ a:active {
   text-decoration: none;
   color: #1C052B;
 }
-
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 15px;
   background-color: #1C052B;
 }
-
 header .logo, header nav a {
   color: white;
   text-decoration: none;

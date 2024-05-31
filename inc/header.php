@@ -2,11 +2,13 @@
 <link rel="stylesheet" href="../assets/css/navbar.css">
 </head>
 <header>
-        <div class="logo">LOGO</div>
+        <div class="logo">Ferocar</div>
         <nav>
             <ul class="nav-links">
                 <li><a href="../veiculos/horarios.php">Horarios</a></li>
-                <li><a href="#">Usuários</a></li>
+                <li><a href="../usuarios/listar.php">Usuários</a></li>
+                <li><a href="../clientes/register.php">Clientes</a></li>
+                <li><a href="../veiculos/register.php">Veiculos</a></li>
                 <li><a href="../logout.php" class="login-btn">Sair</a></li>
             </ul>
             <div class="hamburger">
@@ -26,3 +28,7 @@
     });
 });
 </script>
+<style>
+ 
+
+</style>

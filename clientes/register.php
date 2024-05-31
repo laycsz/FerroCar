@@ -106,5 +106,8 @@ $sql = "SELECT * FROM clientes ORDER BY nome DESC";
 <script>
         $("#telefone").mask("(99) 99999-9999")
       </script>
+      <?php
+include '../inc/footer.php';  
+      ?>
 
   

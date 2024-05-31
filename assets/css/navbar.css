@@ -1,5 +1,3 @@
-
-
 nav {
   display: flex;
   align-items: center;
@@ -17,7 +15,7 @@ nav {
   text-decoration: none;
 }
 .login-btn {
-  background-color: #4A235A;
+  background-color: #194f88;
   padding: 10px 15px;
   border-radius: 5px;
 }
@@ -45,7 +43,7 @@ nav {
       position: absolute;
       top: 70px;
       left: 0;
-      background-color: #280B39;
+      background-color: #194f88;
   }
   .nav-links.active {
       display: flex;

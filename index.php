@@ -15,9 +15,13 @@ $u = new Usuario;
 </head>
 
 <body>
+
   <div class="login-page">
+    
     <div class="form">
- 
+      
+    <h1>Faça seu login</h1>
+    
       <form class="login-form" method="POST" action="index.php">
         <div class="input-group">
           <label class="label">Usuario</label>
@@ -47,7 +51,7 @@ $u = new Usuario;
       if ($u->msgErro == "") {
 
         if ($u->logar($email, $senha)) {
-          header("location: home/hometeste.php");
+          header("location: home/index.php");
         }
         
         } else  {
