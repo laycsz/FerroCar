@@ -13,7 +13,7 @@ require_once '../conexao/conexao.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="icon" href="../assets/images/icon/parking (1).png">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/listarusuario.css">
 </head>
 <body><div class="box-search">
     <input type="search" class="form-control w-25" placeholder="Pesquisar" id="pesquisar">
@@ -86,54 +86,7 @@ require_once '../conexao/conexao.php';
 </script>
 </body>
 <style>
-  body {
-
-background: rgb(41, 19, 65);
-background: linear-gradient(90deg, rgba(41, 19, 65, 1) 0%, rgba(33, 15, 52, 1) 49%, rgba(12, 0, 40, 1) 100%);
-
-font-family: sans-serif;
-font-weight: 100;
-}
-
-.container {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-
-table {
-width: 800px;
-border-collapse: collapse;
-overflow: hidden;
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-border-radius: 10px;
-}
-
-th,
-td {
-padding: 15px;
-background-color: #523b5f;
-color: #cba8dc;
-}
-
-th {
-text-align: left;
-}
-
-a {
-color: #cba8dc;
-font-family: arial;
-font-size: 13px;
-
-}
-
-thead,
-th {
-
-background-color: #2e183a;
-
-}
+ 
 
 </style>
 

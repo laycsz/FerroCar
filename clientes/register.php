@@ -18,6 +18,13 @@ $sql = "SELECT * FROM clientes ORDER BY nome DESC";
       cpf.value += "-"
     }
   }
+ 
+</script>
+<script>
+  $(document).ready(function(){
+  $('#telefone').mask('(99) 99999-9999');
+});
+
 </script>
 
 <body>
@@ -84,8 +91,8 @@ $sql = "SELECT * FROM clientes ORDER BY nome DESC";
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="user-box">
-                        <label for="telefone">Telefone do Cliente:</label>
-                        <input type="text" id="telefone" name="telefone" required>
+                        <label>Telefone do Cliente:</label>
+                        <input type="text" id="telefone" name="telefone">
                     </div>
                     <div class="user-box">
                         <label for="entrada" class="label-entrada-clie">Hora Entrada:</label>
@@ -103,9 +110,7 @@ $sql = "SELECT * FROM clientes ORDER BY nome DESC";
    
 </body>
 </html>
-<script>
-        $("#telefone").mask("(99) 99999-9999")
-      </script>
+
       <?php
 include '../inc/footer.php';  
       ?>

@@ -11,35 +11,7 @@ html, body {
     background-attachment: fixed;
 }
 
-   
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background-color: #141414;
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #357ABD;
-    text-decoration: none;
-}
 
 .login-btn {
     background-color: #357ABD;
@@ -65,7 +37,6 @@ nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
     display: inline-block;
     margin: 20px auto;
     text-align: center; 
@@ -200,7 +171,6 @@ nav ul li a {
 .testimonial span {
     display: block;
     margin-top: 10px;
-    font-weight: bold;
     color: #4A90E2;
 }
 

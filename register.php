@@ -79,7 +79,7 @@ $usuario = new Usuarios('estacionamento', 'localhost', 'postgres', '0511');
   <div class="login-page">
   
     <div class="form">
-    <h1>Faça seu login</h1>
+    <h1>Faça seu cadastro</h1>
       <form class="login-form" method="POST">
     
         <div class="input-group">

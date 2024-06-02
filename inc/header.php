@@ -1,14 +1,23 @@
 <head>
-<link rel="stylesheet" href="../assets/css/navbar.css">
+<link rel="stylesheet" href="../assets/css/header.css">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
 </head>
 <header>
-        <div class="logo">Ferocar</div>
+    <a href="../home/index.php">
+    <div class="logo">Ferocar</div>
+    </a>
+      
         <nav>
             <ul class="nav-links">
-                <li><a href="../veiculos/horarios.php">Horarios</a></li>
-                <li><a href="../usuarios/listar.php">Usuários</a></li>
-                <li><a href="../clientes/register.php">Clientes</a></li>
-                <li><a href="../veiculos/register.php">Veiculos</a></li>
+            <li><a href="../clientes/register.php">Incluir Clientes</a></li>
+                <li><a href="../veiculos/register.php">Incluir Veículos</a></li>
+                <li><a href="../movimento/index.php">Incluir Entrada e Saída de veículos</a></li>
+                <li><a href="../relatorio/index.php">Relatórios</a></li>
+                <li><a href="../veiculos/horarios.php">Horario de funcionamento</a></li>
+             
                 <li><a href="../logout.php" class="login-btn">Sair</a></li>
             </ul>
             <div class="hamburger">
@@ -28,7 +37,3 @@
     });
 });
 </script>
-<style>
- 
-
-</style>

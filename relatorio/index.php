@@ -1,180 +1,102 @@
 <?php
-include '../inc/header.php';
+
+
+include '../inc/header.php'
 
 ?>
 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatórios</title>
+  <link rel="stylesheet" href="../assets/css/relatorio.css">
+  <!-- Inclua o jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Inclua o jQuery Mask Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+
 <body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
-    <h2>
-        Visualize os relatórios:
-    </h2>
-    <div class="card-group">
-        <div class="card">
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Relatórios de Gestão</h1>
+        <p>Veja os relatórios detalhados sobre veículos, clientes, usuários e movimentação.</p>
+      </div>
+    </section>
 
-            <div class="card-body">
-                <h5 class="card-title">Relatório de clientes</h5>
-                <br>
-                <p class="card-text">Acesse as informações de cada cliente.</p>
-                <br>
-                <a href="../clientes/listar.php">
-                    <button class="cta">
-                        <span>Acessar</span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                </a>
-            </div>
+    <section class="report-section">
+      <div class="container">
+        <div class="report-card">
+          <h3>Veículos Cadastrados</h3>
+          <p class="numbers" id="vehicle-count">0</p>
+          <a href="../veiculos/listar.php">
+          <h1 class="detalhes">Ver detalhes</h1>
+          </a>
+         
         </div>
-        <div class="card">
-
-            <div class="card-body">
-                <h5 class="card-title">Relatório de veículos</h5>
-                <br>
-                <p class="card-text">Acesse as informações de cada veículo.</p>
-                <br>
-                <a href="../veiculos/listar.php">
-                    <button class="cta">
-                        <span>Acessar</span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                </a>
-            </div>
+        <div class="report-card">
+          <h3>Clientes Cadastrados</h3>
+          <p id="client-count">0</p>
+          <a href="../clientes/listar.php">
+          <h1 class="detalhes">Ver detalhes</h1>
+          </a>
         </div>
-        <div class="card">
-
-            <div class="card-body">
-                <h5 class="card-title">Relatório de usuário</h5>
-                <br>
-                <p class="card-text">Acesse as informações de cada usuário.</p>
-                <br>
-                <a href="../usuarios/listar.php">
-                    <button class="cta">
-
-                        <span>Acessar</span>
-                        <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                </a>
-
-            </div>
+        <div class="report-card">
+          <h3>Usuários Cadastrados</h3>
+          <p id="user-count">0</p>
+          <a href="../usuarios/listar.php">
+          <h1 class="detalhes">Ver detalhes</h1>
+          </a>
         </div>
-    </div>
-    <br>
-    <br>
-    <a href="../movimento/relatorio.php">
-        <h3>relatórios de movimentos</h3>
-    </a>
+        <div class="report-card">
+          <h3>Movimentação</h3>
+          <p id="movement-count">0</p>
+          <a href="../movimento/">
+          <h1 class="detalhes">Ver detalhes</h1>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <?php
+  </main>
 
-    include '../inc/footer.php';
-
-    ?>
+  <script src="assets/js/scripts.js"></script>
 </body>
-<style>
-    .card-group {
-        margin-top: 100px;
-        margin: auto;
-        width: 50%;
-        gap: 0.5rem;
-        height: 370px;
 
-    }
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+            const clientCountElement = document.getElementById('client-count');
+            const vehicleCountElement = document.getElementById('vehicle-count');
+            const userCountElement = document.getElementById('user-count')
 
-    .card {
-        border-radius: 10px;
+            async function fetchCount(url, element) {
+                try {
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    console.log('Count response:', data);
+                    element.textContent = data.count;
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            }
 
+            fetchCount('../clientes/get_client_count.php', clientCountElement);
+            fetchCount('../veiculos/get_vehicle_count.php', vehicleCountElement);
+            fetchCount('../usuarios/get_user_count.php', userCountElement);
+            setInterval(() => fetchCount('../clientes/get_client_count.php', clientCountElement), 5000);
+            setInterval(() => fetchCount('../veiculos/get_vehicle_count.php', vehicleCountElement), 5000);
+            setInterval(() => fetchCount('../usuarios/get_user_count.php', userCountElement), 5000);
+});
 
+</script>
 
-        font-size: 20px;
-        color: white;
-        background-color: #2e1d40;
-    }
-
-    h2 {
-
-        margin-bottom: 100px;
-        color: white;
-        text-align: center;
-
-    }
-
-    .card-title {
-        font-family: Arial, Helvetica, sans-serif
-    }
-
-    .cta {
-        position: relative;
-        margin: auto;
-        padding: 12px 18px;
-        transition: all 0.2s ease;
-        border: none;
-        background: none;
-    }
-
-    .cta:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        border-radius: 50px;
-        background: #0B0524;
-        width: 45px;
-        height: 45px;
-        transition: all 0.3s ease;
-    }
-
-    .cta span {
-
-        position: relative;
-        bottom: 5px;
-
-        font-size: 18px;
-
-        letter-spacing: 0.05em;
-        color: #967fa5;
-    }
-
-    .cta svg {
-        position: relative;
-        top: 0;
-        margin-left: 10px;
-        fill: none;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke: #0B0524;
-        stroke-width: 2;
-        transform: translateX(-5px);
-        transition: all 0.3s ease;
-    }
-
-    .cta:hover:before {
-        width: 100%;
-        background: #1b0c3e;
-    }
-
-    .cta:hover svg {
-        transform: translateX(0);
-    }
-
-    .cta:active {
-        transform: scale(0.95);
-    }
-
-    a {
-        text-align: center;
-    }
-</style>
+<?php
+include '../inc/footer.php'
+?>

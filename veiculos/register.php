@@ -7,10 +7,15 @@ $p = new Veiculos('estacionamento', 'localhost', 'postgres', '0511');
 ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
+<script>
+    $(document).ready(function(){
+  $('#placas').mask('aaa-9999');
+});
 
+    </script>
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Registro</title>
 </head>
 
 <body>
@@ -54,6 +59,8 @@ $p = new Veiculos('estacionamento', 'localhost', 'postgres', '0511');
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/registercar.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 </head>
 <body>
 <main>
@@ -115,16 +122,5 @@ $p = new Veiculos('estacionamento', 'localhost', 'postgres', '0511');
 </main>
 </body>
    
-
-    <script>
-        $("#placas").mask("aaa-9999")
-    </script>
-
-
-
-
-<style>
-  
-</style>
 
 </html>

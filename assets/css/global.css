@@ -19,28 +19,14 @@ a:link, a:visited {
 
 a:hover {
   text-decoration: none;
-  color: #826099;
+  color: #606099;
 }
 
 a:active {
   text-decoration: none;
-  color: #1C052B;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  background-color: #1C052B;
-}
-header .logo, header nav a {
-  color: white;
-  text-decoration: none;
+  color: #05072b;
 }
 
-header nav a:hover {
-  color: #826099;
-}
 
 main {
   display: flex;

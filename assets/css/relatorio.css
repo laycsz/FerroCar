@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+body, html {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1c1c1e;
+  color: #FFFFFF;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+    color: #357ABD;
+   
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.report-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.report-card {
+    
+  background: #2c2c2e;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.report-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.report-card h3 {
+    
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.report-card p {
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 10px;
+  color: #357ABD;
+}
+
+.detalhes{
+    font-size: 20px;
+}
+a{
+   
+    text-decoration: none;
+  }
+  a:link, a:visited {
+     text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #606b99;
+  }
+  
+
+  
