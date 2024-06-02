@@ -53,7 +53,7 @@ O protótipo deste projeto foi desenvolvido para fornecer uma visão geral das i
 ## Prints da Tela
 Login e Cadastro
  <td><img target="_blank" src="https://github.com/laycsz/FerroCar/blob/main/print/tela%20login.png" width="850"></td>
-  <td><img target="_blank" src=""  width="850"></td>
+  <td><img target="_blank" src="https://github.com/laycsz/FerroCar/blob/main/print/tela%20register.png"  width="850"></td>
 
 ## Instalação⚙️
 
