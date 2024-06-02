@@ -52,7 +52,7 @@ O protótipo deste projeto foi desenvolvido para fornecer uma visão geral das i
 - <a target="_blank" href="https://www.figma.com/design/2RwIQ9HEOq5DZfwUQXwz4Q/Untitled?node-id=211-2">Figma Desktop</a>
 ## Prints da Tela
 Login e Cadastro
- <td><img target="_blank" src="https://github.com/laycsz/FerroCar/blob/main/capturasdatela/Captura%20de%20tela%202024-05-28%20215110.png" width="850"></td>
+ <td><img target="_blank" src="https://github.com/laycsz/FerroCar/blob/main/print/tela%20login.png" width="850"></td>
   <td><img target="_blank" src="https://github.com/laycsz/FerroCar/blob/main/capturasdatela/Captura%20de%20tela%202024-05-28%20215317.png"  width="850"></td>
 
 ## Instalação⚙️
