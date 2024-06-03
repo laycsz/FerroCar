@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+body, html {
+    background: linear-gradient(45deg, #16171a, #292e35);
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    background-attachment: fixed;
+}
+
+
+.container_movimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+
+}
+.entrada_saida {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.check_in {
+    width: 45%;
+    box-sizing: border-box;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.check_out {
+    box-sizing: border-box;
+    width: 45%;
+    height: 10%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.h2-entrada-mov {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007aff;
+}
+
+.label-index-movi {
+    margin-right: 5px;
+    font-size: 15px;
+    color: #a1a1a3;
+}
+
+.input-index-mov, .select-index-movi {
+    margin-top: 20px;
+    max-width: 190px;
+    height: 44px;
+    background-color: #3a3a3c; /* Input cinza mais claro */
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.button-index-movi {
+    background-color: #007aff;
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.button-index-movi:hover {
+    background-color: #005bb5;
+}
+
+.h3-visualizar-mov {
+    margin-top: 20px;
+    color: #007aff;
+}
+
+select {
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 10px;
+    color: #005bb5;
+    background-color: #3a3a3c;
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+
+option {
+   
+    font-weight: 400;
+    font-size: 14px;
+    color: #005bb5;
+    background-color: white;
+}
+
+
+
+
+
+
+
+

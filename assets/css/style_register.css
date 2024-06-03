@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
-body {
-  background: #1c1c1e; /* Cor de fundo escura */
-  font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+body, html {
+  height: 100%;
   margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: #1c1c1e;
+  color: #FFFFFF;
+  min-height: 100%;
+  background-attachment: fixed;
 }
 
 .login-page {
   width: 360px;
-  padding: 8% 0 0;
-  margin: auto;
+   padding: 8% 0 0;
+    margin: auto;
 }
 
 .form {
@@ -23,6 +21,7 @@ body {
   border-radius: 16px;
   background: #2c2c2e; /* Fundo cinza escuro */
   padding: 45px;
+  box-sizing: border-box;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -153,7 +152,7 @@ h1 {
   color: #EF3B3A;
 }
 
-div#msg-sucesso {
+/* div#msg-sucesso {
   width: 420px;
   margin: 10px auto;
   background-color: rgba(50, 205, 50, .3);
@@ -166,30 +165,36 @@ div.msg-erro {
   padding: 10px;
   background-color: rgba(250, 128, 114, .3);
   border-radius: 1px solid rgb(165, 42, 42);
-}
+} */
 
 .msg-err {
-  height: 30px;
+  height: 20px;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 8px;
+    margin: auto;
+    color: red;
+    text-align: center;
+    width: 300px;
+    margin: 20px auto;
+    padding: 5px;
+    background-color: rgba(250, 128, 114, .3);
+    border-radius: 1px solid rgb(165, 42, 42);
+}
+
+.msg-sucess {
+  height: 20px;
   align-items: center;
   font-weight: 600;
   border-radius: 8px;
   margin: auto;
-  color: red;
+  color: rgb(255, 255, 255);
   text-align: center;
-  width: 420px;
-  margin: 10px auto;
-  padding: 10px;
-  background-color: rgba(250, 128, 114, .3);
-  border-radius: 1px solid rgb(165, 42, 42);
-}
-
-.msg-sucess {
-  text-align: center;
-  color: whitesmoke;
-  width: 420px;
-  margin: 10px auto;
-  background-color: rgba(50, 205, 50, .3);
-  border-radius: 1px solid rgb(34, 139, 34);
+  width: 300px;
+  margin: 20px auto;
+  padding: 5px;
+    background-color: rgba(50, 205, 50, 0.3);
+    border-radius: 1px solid rgb(34, 139, 34);
 }
 
 .usuario {

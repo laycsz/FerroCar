@@ -122,5 +122,8 @@ $p = new Veiculos('estacionamento', 'localhost', 'postgres', '0511');
 </main>
 </body>
    
+<?php
+include '../inc/footer.php'
+?>
 
 </html>

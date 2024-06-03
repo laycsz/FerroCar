@@ -113,12 +113,6 @@ $usuario = new Usuarios('estacionamento', 'localhost', 'postgres', '0511');
   </div>
 
 
-
-  ?>
-  <style>
-   
-  </style>
-
 </body>
 
 </html>

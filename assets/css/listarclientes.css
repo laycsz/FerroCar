@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+body, html {
+    background: linear-gradient(45deg, #16171a, #292e35);
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    background-attachment: fixed;
+}
+
+.box-voltar {
+
+    display: flex;
+    justify-content: center;
+    gap: 0.5%;
+    margin-top: 50px;
+    padding: 10px;
+
+}
+
+input[type="search"].form-control {
+    background-color: #16171a; /* Cor de fundo inicial */
+    color: white; /* Cor do texto */
+    border: 1px solid #555; /* Cor da borda */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para quando o input está focado */
+input[type="search"].form-control:focus {
+    background-color: #1c1c1c; 
+    color: white; 
+    outline: none; 
+    border: 1px solid #888; 
+}
+input.form-control {
+    background-color: #1c1c1c;
+    border-color: #beadc1;
+    outline: none;
+    color: #cba8dc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input.form-control {
+    background-color: #1c1c1c;
+    border-color: #beadc1;
+    outline: none;
+    color: #cba8dc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input.form-control:focus {
+    border-color: #1c1c1c;
+    box-shadow: none;
+}
+
+.btn.btn-dark {
+    background-color: #007aff   ;
+    border: none;
+    color: #cba8dc;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn.btn-dark:hover {
+    background-color: #01107e;
+}
+
+.body-clie-listar {
+    background: linear-gradient(45deg, #16171a, #292e35);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    width: 100%;
+}
+
+.container-clie {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.table-clie {
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.thead-clie-list {
+    background-color: #007aff;
+}
+
+.th-clie-listar, .th-clie-listar {
+    font-size: 15px;
+    padding: 15px;
+    background-color: #007aff;
+    color: #ffffff;
+    text-align: center;
+
+
+}
+th{
+    font-size: 15px;
+    padding: 15px;
+    background-color: #007aff;
+    color: #ffffff;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #007aff; /* Adiciona uma borda inferior às células para melhorar a separação visual */
+}
+
+td a {
+    color: #cba8dc;
+    font-size: 1.2em;
+}

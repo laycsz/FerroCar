@@ -602,70 +602,7 @@ select#cars {
 
  /* style index movimento */
 
- .label-index-movi {
-   margin-right: 5px;
-   @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-   font-family: 'Quicksand', sans-serif;
-   font-size: 15px;
- }
-
- .button-index-movi {
-   margin-top: 20px;
-   background-color: #baabcd;
-   height: 30px;
-   width: 100px;
-   font-size: 10px;
-   border-radius: 20px;
-   @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-   font-family: 'Quicksand', sans-serif;
- }
-
- .body-index-movi {
-   color: white;
-   text-align: center;
- }
-
-
- .select-index-movi {
-   height: 25px;
-   font-size: 13px;
-   @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-   font-family: 'Quicksand', sans-serif;
-   border-radius: 10px;
- }
-
- .enviar-index-mov {
-   width: 100px;
-   margin-top: 5px;
-   color: black;
-   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
-   font-family: 'Quicksand', sans-serif;
-   border-radius: 30px;
-   background-color: #baabcd;
-   font-weight: 500;
-   font-size: 10px;
- }
-
- .input-index-mov {
-
-   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
-   font-family: 'Quicksand', sans-serif;
-   height: 30px;
-   margin-top: 15px;
-   width: 120px;
-   font-size: 12px;
-   color: black;
-   font-weight: 700;
-   border-radius: 10px;
- }
-
- .h2-entrada-mov {
-   margin-top: 30px;
- }
-
- .h3-visualizar-mov {
-   margin-top: 100px
- }
+ 
 
  /* style relatorio index */
  
