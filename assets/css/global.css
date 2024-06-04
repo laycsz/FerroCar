@@ -16,12 +16,12 @@ a{
 }
 a:link, a:visited {
    text-decoration: none;
-  color: white;
+   color: #007aff;
 }
 
 a:hover {
   text-decoration: none;
-  color: #606099;
+  color: #4d68c1;
 }
 
 a:active {

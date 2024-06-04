@@ -7,7 +7,7 @@
 </head>
 <header>
     <a href="../home/index.php">
-    <div class="logo">Ferocar</div>
+   <img class="img" src="../assets/images/icon/logo.png" alt="logo">
     </a>
       
         <nav>

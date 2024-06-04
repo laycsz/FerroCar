@@ -1,10 +1,7 @@
 <?php
 include_once '../conexao/conexao.php';
-include '../inc/header.php';
-
 
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-
 
 if (isset($_GET['id'])) {
     if (isset($_GET['id'])) {
@@ -16,99 +13,52 @@ if (isset($_GET['id'])) {
     $infosUpdate = $stmt2->fetch(PDO::FETCH_ASSOC);
 }
 ?>
-
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuários</title>
+    <link rel="stylesheet" href="../assets/css/editarusuarios.css">
+</head>
 <body>
-
-
-
-    <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="editar_usuario">
-                <br><br>
-                <h2>Editar Clientes</h2>
-                <br>
-                <form action="" method="POST">
-                    <label for="">ID Usuario</label>
-                    <input type="text" readonly name="id_login" value="<?php if (isset($_GET['id'])) {
-                                                                            echo $_GET['id'];
-                                                                        } ?>">
-                    <br><br>
-                </form>
-                <form action="../usuarios/classe_usuarios.php" method="POST">
-                    <label for="">Nome</label>
-                    <input type="text" name="usua_nomeUpdate" value="<?php if (isset($infosUpdate['nome'])) {
-                                                                            echo $infosUpdate['nome'];
-                                                                        } ?>">
-                    <input type="text" hidden name="id_login" value="<?php if (isset($_GET['id'])) {
-                                                                            echo $_GET['id'];
-                                                                        } ?>">
-
-
-
-                    <label for="">CPF</label>
-                    <input type="text" name="usua_cpfUpdate" value="<?php if (isset($infosUpdate['cpf'])) {
-                                                                        echo $infosUpdate['cpf'];
-                                                                    } ?>">
-                    <label for="">Email</label>
-                    <input type="text" name="usua_emailUpdate" value="<?php if (isset($infosUpdate['email'])) {
-                                                                            echo $infosUpdate['email'];
-                                                                        } ?>">
-                   
-                    <br><br>
-                    <input type="submit">
-                    <input type="reset">
-
-                </form>
-
-            </div><!-- fechamento da div editar_usuario-->
-
-            <br>
-            <div class="voltar_usuarios">
-                <a href="<?php BASEURL ?>/usuarios/listar.php" class="box_a">
-
-                    <p class="box_text">VOLTAR</p>
-                </a>
+        <div class="container-editar">
+            <h2 class="h2-edit-user">Editar Usuários</h2>
+            <form action="../usuarios/classe_usuarios.php" method="POST" class="form-edit-user">
+                <div class="form-group">
+                    <label class="label-edit-user" for="id_login">ID Usuário</label>
+                    <input class="input-edit-user" type="text" readonly name="id_login" value="<?php if (isset($_GET['id'])) {
+                                                                                                        echo $_GET['id'];
+                                                                                                    } ?>">
+                </div>
+                <div class="form-group">
+                    <label class="label-edit-user" for="usua_nomeUpdate">Nome</label>
+                    <input class="input-edit-user" type="text" name="usua_nomeUpdate" value="<?php if (isset($infosUpdate['nome'])) {
+                                                                                                    echo $infosUpdate['nome'];
+                                                                                                } ?>">
+                </div>
+                <div class="form-group">
+                    <label class="label-edit-user" for="usua_cpfUpdate">CPF</label>
+                    <input class="input-edit-user" type="text" name="usua_cpfUpdate" value="<?php if (isset($infosUpdate['cpf'])) {
+                                                                                                echo $infosUpdate['cpf'];
+                                                                                            } ?>">
+                </div>
+                <div class="form-group">
+                    <label class="label-edit-user" for="usua_emailUpdate">Email</label>
+                    <input class="input-edit-user" type="text" name="usua_emailUpdate" value="<?php if (isset($infosUpdate['email'])) {
+                                                                                                echo $infosUpdate['email'];
+                                                                                            } ?>">
+                </div>
+                <div class="form-actions">
+                <input class="button-edit-user" type="submit" value="Salvar">
+                <input class="button-edit-user" type="reset" value="Resetar">
+                <a href="../usuarios/listar.php">
+                     <input class="button-voltar"  value="Voltar">
+                 </a>
+              
             </div>
-
+            </form>
+            
+        </div>
 </body>
-<style>
-    h2 {
-        margin-top: 30px;
-    }
-
-    body {
-        text-align: center;
-        color: white;
-    }
-
-    input {
-
-        width: 150px;
-        border-radius: 10px;
-        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
-        font-family: 'Quicksand', sans-serif;
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        font-size: 15px;
-        font-weight: 400;
-    }
-
-    label {
-        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
-        font-family: 'Quicksand', sans-serif;
-        font-size: 14px;
-    }
-
-    button {
-        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
-        font-family: 'Quicksand', sans-serif;
-        border-radius: 10px;
-        color: black;
-        font-weight: 600;
-        width: 90px;
-    }
-</style>
-
-
 </html>

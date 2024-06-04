@@ -1,5 +1,4 @@
 <?php
-include '../inc/header.php';
 require_once '../conexao/conexao.php';
 ?>
 
@@ -20,8 +19,7 @@ require_once '../conexao/conexao.php';
      <i class="bi bi-arrow-return-left">  Voltar</i>
      </button>
     </a>
-          
-       
+
         <input type="search" class="form-control w-25" placeholder="Pesquisar pela placa" id="pesquisar">
        
     </div>

@@ -57,7 +57,7 @@ include '../inc/header.php'
         <div class="report-card">
           <h3>Movimentação</h3>
           <p id="movement-count">0</p>
-          <a href="../movimento/">
+          <a href="../movimento/relatorio.php">
           <h1 class="detalhes">Ver detalhes</h1>
           </a>
         </div>

@@ -7,6 +7,7 @@ body, html{
     font-family: 'Quicksand', sans-serif;
     background-attachment: fixed;
 }
+
 .container-editar {
     background: #16171a;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
@@ -16,16 +17,15 @@ body, html{
     text-align: center;
     margin: 50px auto; 
     position: relative; 
-
 }
 
-.h2-editar {
+.h2-edit-clie {
     margin-bottom: 20px;
     font-size: 24px;
     color: #357ABD;
 }
 
-.form-editar {
+.form-edit-clie {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -37,12 +37,12 @@ body, html{
     text-align: left;
 }
 
-.label-editar {
+.label-edit-clie {
     font-size: 14px;
     margin-bottom: 5px;
 }
 
-.input-editar {
+.input-edit-clie {
     margin-top: 20px;
     height: 44px;
     background-color: #16171a; /* Input cinza mais claro */
@@ -67,6 +67,7 @@ body, html{
 .button-editar:hover {
     background-color: #0056b3;
 }
+
 .button-voltar{
     text-align: center;
     padding: 10px;
@@ -82,5 +83,4 @@ body, html{
 .button-voltar:hover {
     background-color: #0056b3;
 }
-
 

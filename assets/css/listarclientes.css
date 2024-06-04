@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 
 body, html {
-    background: linear-gradient(45deg, #16171a, #292e35);
-    color: white;
-    text-align: center;
     font-family: 'Quicksand', sans-serif;
-    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #16171a, #292e35);
+    color: #FFFFFF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .box-voltar {
@@ -23,7 +26,7 @@ input[type="search"].form-control {
     color: white; /* Cor do texto */
     border: 1px solid #555; /* Cor da borda */
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 /* Estilo para quando o input está focado */
@@ -59,15 +62,17 @@ input.form-control:focus {
 .btn.btn-dark {
     background-color: #007aff   ;
     border: none;
-    color: #cba8dc;
+    color: white;
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .btn.btn-dark:hover {
-    background-color: #01107e;
+    color: white;
+    background-color: #0056b3;
 }
+
 
 .body-clie-listar {
     background: linear-gradient(45deg, #16171a, #292e35);
@@ -120,6 +125,6 @@ td{
 }
 
 td a {
-    color: #cba8dc;
+    color: #007aff;
     font-size: 1.2em;
 }

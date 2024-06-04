@@ -26,7 +26,7 @@ input[type="search"].form-control {
     color: white; /* Cor do texto */
     border: 1px solid #555; /* Cor da borda */
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 /* Estilo para quando o input está focado */
@@ -62,14 +62,15 @@ input.form-control:focus {
 .btn.btn-dark {
     background-color: #007aff   ;
     border: none;
-    color: #cba8dc;
+    color: white;
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .btn.btn-dark:hover {
-    background-color: #01107e;
+    color: white;
+    background-color: #0056b3;
 }
 
 .body-veic-listar {
@@ -122,7 +123,4 @@ td{
     border-bottom: 1px solid #007aff; /* Adiciona uma borda inferior às células para melhorar a separação visual */
 }
 
-td a {
-    color: #cba8dc;
-    font-size: 1.2em;
-}
+
