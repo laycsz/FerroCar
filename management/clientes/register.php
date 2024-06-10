@@ -1,7 +1,7 @@
 <?php
 
-include '../inc/header.php';
-require_once '../crud/crud-clientes.php';
+include '../../inc/header.php';
+require_once '../../crud/crud-clientes.php';
 date_default_timezone_set("America/Sao_Paulo");
 
 $p = new Clientes('estacionamento', 'localhost', 'postgres', '0511');
@@ -112,7 +112,7 @@ $sql = "SELECT * FROM clientes ORDER BY nome DESC";
 </html>
 
       <?php
-include '../inc/footer.php';  
+include '../../inc/footer.php';  
       ?>
 
   

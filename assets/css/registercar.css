@@ -70,6 +70,7 @@ body, html {
 }
 
 .select-group select {
+    font-family: 'Quicksand', sans-serif;
     color: #357ABD;
     background: #16171a;
     border-radius: 5px;
@@ -86,6 +87,7 @@ body, html {
 }
 
 .vehicle-form button.btn {
+    font-family: 'Quicksand', sans-serif;
     width: 100%;
     padding: 10px;
     background-color: #357ABD;

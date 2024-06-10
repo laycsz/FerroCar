@@ -1,5 +1,5 @@
 <?php
-include_once '../conexao/conexao.php';
+include_once '../../conexao/conexao.php';
 
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
@@ -19,7 +19,8 @@ if (isset($_GET['id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Usuários</title>
-    <link rel="stylesheet" href="../assets/css/editarusuarios.css">
+    <link rel="icon" href="../../assets/images/icon/parking (1).png">
+    <link rel="stylesheet" href="../../assets/css/editarusuarios.css">
 </head>
 <body>
         <div class="container-editar">

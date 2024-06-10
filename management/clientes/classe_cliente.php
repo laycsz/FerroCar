@@ -1,5 +1,5 @@
 <?php
-include_once '../conexao/conexao.php';
+include_once '../../conexao/conexao.php';
 
 echo$cliente_id = $_POST['cliente_id'];
 echo '<br>';

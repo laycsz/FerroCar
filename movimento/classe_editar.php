@@ -20,6 +20,6 @@ if ($mov_codigoUpdate != '' && $mov_placasUpdate != '' && $mov_dataUpdate !=  ''
     if ($stmt3->rowCount() > 0) {
         $update = "UPDATE movimento SET placas = '$mov_placasUpdate', dt_saida = '$mov_dataUpdate', hr_saida = '$mov_horaUpdate',  valor = '$valor' WHERE id = '$mov_codigoUpdate'";
         $stmt3Update = $conn->query($update);
-        header('location: ../movimento/relatorio.php');
+        header('location: ./movimento/relatorio.php');
     }
 }

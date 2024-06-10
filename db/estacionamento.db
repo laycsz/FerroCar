@@ -8,17 +8,12 @@ create table clientes(
    saida time
 )
 
-
-
-
 create table usuariologin(
 id_login serial primary key,
 nome varchar(100),
 cpf varchar(15),
 email varchar(100),
-senha varchar(100),
-
-
+senha varchar(100)
 
 )
 create table veiculos(

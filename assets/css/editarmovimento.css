@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+body, html{
+    background: linear-gradient(45deg, #16171a, #292e35);
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    background-attachment: fixed;
+}
+.container-editar {
+    background: #16171a;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    margin: 50px auto; 
+    position: relative; 
+
+}
+
+.h2-editar {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #357ABD;
+}
+
+.form-editar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.label-editar {
+    margin-right: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-editar {
+    margin-right: 5px;
+    text-align: center;
+    width: 150px;
+    margin-top: 20px;
+    height: 44px;
+    background-color: #16171a; /* Input cinza mais claro */
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    border-color: rgba(245, 245, 245, 0.067);
+    font-size: 1rem;
+    color: #007bff;
+}
+
+.input-editar-id {
+    margin-right: 5px;
+    text-align: center;
+    width: 80px;
+    margin-top: 20px;
+    height: 44px;
+    background-color: #16171a; /* Input cinza mais claro */
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    border-color: rgba(245, 245, 245, 0.067);
+    font-size: 1rem;
+    color: #007bff;
+}
+.input-editar-valor {
+    margin-right: 5px;
+    text-align: center;
+    width: 80px;
+    margin-top: 20px;
+    height: 44px;
+    background-color: #16171a; /* Input cinza mais claro */
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    border-color: rgba(245, 245, 245, 0.067);
+    font-size: 1rem;
+    color: #007bff;
+}
+
+
+.button-editar {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button-editar:hover {
+    background-color: #0056b3;
+}
+.button-voltar{
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    width: 70px;
+}
+
+.button-voltar:hover {
+    background-color: #0056b3;
+}
+
+

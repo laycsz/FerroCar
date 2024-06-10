@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Horários de Funcionamento</title>
-  <link rel="stylesheet" href="../assets/css/horario.css">
+  <link rel="icon" href="../../assets/images/icon/parking (1).png">
+
+  <link rel="stylesheet" href="../../assets/css/horario.css">
 </head>
 
 <body>
-  <?php include '../inc/header.php'; ?>
+  <?php include '../../inc/header.php'; ?>
 
   <main>
    
@@ -57,8 +59,6 @@
 
   
   </main>
-
-  <?php include '../inc/footer.php'; ?>
 </body>
 
 </html>

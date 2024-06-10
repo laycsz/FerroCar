@@ -1,5 +1,5 @@
 <?php
-include_once '../conexao/conexao.php';
+include_once '../../conexao/conexao.php';
 
 
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
@@ -18,7 +18,8 @@ if (isset($_GET['id'])) {
 <html>
 <head>
     <title>Editar Veículos</title>
-    <link rel="stylesheet" href="../assets/css/editarveiculos.css">
+    <link rel="icon" href="../../assets/images/icon/parking (1).png">
+    <link rel="stylesheet" href="../../assets/css/editarveiculos.css">
 </head>
 
 <body>

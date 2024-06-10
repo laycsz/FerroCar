@@ -51,7 +51,7 @@ $u = new Usuario;
       if ($u->msgErro == "") {
 
         if ($u->logar($email, $senha)) {
-          header("location: home/index.php");
+          header("location: inc/home.php");
         }
         
         } else  {

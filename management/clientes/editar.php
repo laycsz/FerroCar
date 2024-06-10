@@ -1,5 +1,5 @@
 <?php
-include_once '../conexao/conexao.php';
+include_once '../../conexao/conexao.php';
 
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
@@ -19,13 +19,14 @@ if (isset($_GET['id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Clientes</title>
-    <link rel="stylesheet" href="../assets/css/editarclientes.css">
-    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="icon" href="../../assets/images/icon/parking (1).png">
+    <link rel="stylesheet" href="../../assets/css/editarclientes.css">
+    <link rel="stylesheet" href="../../assets/css/global.css">
 </head>
 <body>
         <div class="container-editar">
             <h2 class="h2-edit-clie">Editar Clientes</h2>
-            <form action="../clientes/classe_cliente.php" method="POST" class="form-edit-clie">
+            <form action="../../clientes/classe_cliente.php" method="POST" class="form-edit-clie">
                 <div class="form-group">
                     <label class="label-edit-clie" for="cliente_id">ID Cliente</label>
                     <input class="input-edit-clie" type="text" readonly name="cliente_id" value="<?php if (isset($_GET['id'])) {
