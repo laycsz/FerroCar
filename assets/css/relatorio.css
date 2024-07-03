@@ -21,7 +21,8 @@ body, html {
 }
 
 .hero h1 {
-  color: #357ABD;
+    color: #357ABD;
+   
   font-size: 2.5em;
   margin-bottom: 20px;
 }
@@ -37,21 +38,21 @@ body, html {
   padding: 60px 20px;
 }
 
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap; /* Permite que os cartões quebrem para a próxima linha se não couberem na mesma */
-  justify-content: center; /* Centraliza os cartões dentro do contêiner */
 }
 
 .report-card {
+    
   background: #2c2c2e;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   margin: 10px;
-  flex: 1 1 calc(33.333% - 20px); /* Faz com que cada cartão ocupe 33.333% da largura disponível, menos a margem */
+  flex: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -62,6 +63,7 @@ body, html {
 }
 
 .report-card h3 {
+    
   font-size: 1.5em;
   margin-bottom: 10px;
 }
@@ -73,21 +75,22 @@ body, html {
   color: #357ABD;
 }
 
-.detalhes {
-  font-size: 20px;
+.detalhes{
+    font-size: 20px;
 }
+a{
+   
+    text-decoration: none;
+  }
+  a:link, a:visited {
+     text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #606b99;
+  }
+  
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:link, a:visited {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  text-decoration: none;
-  color: #606b99;
-}
+  

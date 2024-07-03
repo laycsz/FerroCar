@@ -68,7 +68,6 @@ body, html {
 }
 
 .button-index-movi {
-    font-family: 'Quicksand', sans-serif;
     background-color: #007aff;
     color: white;
     height: 40px;
@@ -82,7 +81,6 @@ body, html {
 }
 
 .button-index-movi:hover {
-    font-family: 'Quicksand', sans-serif;
     background-color: #005bb5;
 }
 

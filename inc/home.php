@@ -17,6 +17,28 @@ include '../inc/header.php';
 
 
     <link rel="icon" href="../assets/images/icon/parking (1).png">
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            const clientCountElement = document.getElementById('client-count');
+            const vehicleCountElement = document.getElementById('vehicle-count');
+
+            async function fetchCount(url, element) {
+                try {
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    console.log('Count response:', data);
+                    element.textContent = data.count;
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            }
+
+            fetchCount('../clientes/get_client_count.php', clientCountElement);
+            fetchCount('../veiculos/get_vehicle_count.php', vehicleCountElement);
+            setInterval(() => fetchCount('../clientes/get_client_count.php', clientCountElement), 5000);
+            setInterval(() => fetchCount('../veiculos/get_vehicle_count.php', vehicleCountElement), 5000);
+        });
+    </script>
 </head>
 
 <body>
@@ -42,7 +64,23 @@ include '../inc/header.php';
         </p>
     </section>
 
-
+    <h2 class="h2st">Estatisticas</h2>
+    <section class="statistics">
+          
+        <div class="stat-card">
+      
+            <h3>Vagas Disponíveis</h3>
+            <p class="stat-number">40</p>
+        </div>
+        <div class="stat-card">
+            <h3>Clientes Cadastrados</h3>
+            <p id="client-count" class="stat-number">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Veículos Registrados</h3>
+            <p id="vehicle-count" class="stat-number">0</p>
+        </div>
+    </section>
 
 
     <section class="testimonials">

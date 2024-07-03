@@ -17,14 +17,12 @@ date_default_timezone_set("America/Sao_Paulo");
 </head>
 <body class="body-clie-listar">
     <div class="container-clie">
-    <div class="box-voltar">
-        <a href="../relatorio/index.php">
-            <button class="btn btn-dark">
-                <i class="bi bi-arrow-return-left"> Voltar</i>
+        <div class="box-search">
+            <input type="search" class="form-control" placeholder="Pesquisar" id="pesquisar">
+            <button onclick="limparPesquisa()" class="btn btn-dark">
+                <i class="bi bi-x-circle"></i>
             </button>
-        </a>
-        <input type="search" class="form-control w-25" placeholder="Pesquisar pela placa" id="pesquisar">
-    </div>
+        </div>
 
         <form method="POST" action="" class="form-date">
             <label for="data_inicio">Data de Início</label>
@@ -32,7 +30,11 @@ date_default_timezone_set("America/Sao_Paulo");
             <label for="data_final">Data Final</label>
             <input type="date" name="data_final" id="data_final" value="<?php echo isset($_POST['data_final']) ? $_POST['data_final'] : ''; ?>">
             <input type="submit" value="Pesquisar" name="PesqUsuario">
-            <input type="button" value="Limpar" onclick="limparDatas()">          
+            <input type="button" value="Limpar" onclick="limparDatas()">
+            <a href="../movimento/editar.php">
+            <input type="button" value="Editar movimento pelo ID">
+            </a>
+          
         </form>
 
         <div class="table-container">
@@ -76,10 +78,6 @@ date_default_timezone_set("America/Sao_Paulo");
                     $result_usuarios->execute();
 
                     while ($row_usuario = $result_usuarios->fetch(PDO::FETCH_ASSOC)) {
-                        $dt_entrada = !empty($row_usuario['dt_entrada']) ? new DateTime($row_usuario['dt_entrada']) : null;
-                        $hr_entrada = !empty($row_usuario['hr_entrada']) ? new DateTime($row_usuario['hr_entrada']) : null;
-                        $hr_saida = !empty($row_usuario['hr_saida']) ? new DateTime($row_usuario['hr_saida']) : null;
-
                         echo "<tr>";
                         echo "<td>{$row_usuario['id']}</td>";
                         echo "<td>{$row_usuario['placas']}</td>";
@@ -87,9 +85,9 @@ date_default_timezone_set("America/Sao_Paulo");
                         echo "<td>{$row_usuario['modelo']}</td>";
                         echo "<td>{$row_usuario['cor']}</td>";
                         echo "<td>{$row_usuario['vaga']}</td>";
-                        echo "<td>" . ($dt_entrada ? $dt_entrada->format('d/m/Y') : '-') . "</td>";
-                        echo "<td>" . ($hr_entrada ? $hr_entrada->format('H:i:s') : '-') . "</td>";
-                        echo "<td>" . ($hr_saida ? $hr_saida->format('H:i:s') : '-') . "</td>";
+                        echo "<td>{$row_usuario['dt_entrada']}</td>";
+                        echo "<td>{$row_usuario['hr_entrada']}</td>";
+                        echo "<td>{$row_usuario['hr_saida']}</td>";
                         echo "<td>R$ {$row_usuario['valor']},00</td>";
                         echo "</tr>";
                     }

@@ -9,8 +9,6 @@ body, html {
     height: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    background-attachment: fixed;
 }
 
 .box-search {
@@ -21,15 +19,6 @@ body, html {
     margin-top: 50px;
     padding: 10px;
 }
-.box-voltar {
-    display: flex;
-    justify-content: center;
-    gap: 0.5%;
-    margin-top: 50px;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
 
 input[type="search"].form-control {
  
@@ -61,11 +50,7 @@ input[type="search"].form-control:focus {
     background-color: #0056b3;
 }
 
-.table-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+
 
 table {
     margin: auto;

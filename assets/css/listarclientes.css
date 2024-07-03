@@ -9,8 +9,6 @@ body, html {
     height: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    background-attachment: fixed;
 }
 
 .box-voltar {

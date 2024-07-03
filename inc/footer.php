@@ -4,7 +4,7 @@
   </svg>
   <header>
     <script src="../assets/js/footer.js"></script>
-    <link rel="stylesheet" href="../../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
   </header>
 
   <!-- Copyright -->

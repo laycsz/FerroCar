@@ -34,7 +34,7 @@ O projeto "Ferrocar" é um sistema de gestão de estacionamento desenvolvido par
 
 ## Documentação📄
 Sistema
-- Tela de login e cadastro de usuários.
+- Tela de login e cadastro de usuários: Admin e funcionários.
 - Home: Opções de cadastrar clientes, veículos, ver horários e fazer movimentações.
 - Visualizar e Editar: Clientes, veículos e usuários.
 - Movimentação: Check-in e check-out com cálculo de valor, relatórios com possibilidade de filtrar por datas.
